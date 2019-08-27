@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>click</title>
+</head>
+<form>
+    <h1><p>Do you love me ?</p></h1>
+    <input type="button"value="Yes" onclick="alert('Yes. you are right' )" style="position:absolute;left:200px;top:200px" ;>
+    <input type="button" id="No" value="No" onmouseover="bigImg()" style="position:absolute;left:300px; top:200px" ;>
+
+</form>
+<body>
+<script>
+    function bigImg() {
+        let x = (Math.random() * window.innerWidth);
+        let y = (Math.random() * window.innerHeight);
+        document.getElementById('No').style.left = x + "px";
+        document.getElementById('No').style.top = y + "px";
+    }
+
+    /*function normalImg(x) {
+        x.style.height = Math.random()'xp';
+        x.style.width = Math.random()'xp';
+    }*/
+</script>
+
+</body>
+</html>
